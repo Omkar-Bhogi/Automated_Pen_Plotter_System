@@ -1,0 +1,49 @@
+# Automated Pen Plotter (ESP32)
+
+A 3-axis mechatronic drawing system built as a **team project**: 2 stepper motors drive the X/Y plotting axes, and a servo motor handles pen lift/retraction. Built and tuned June–July 2025.
+
+> **Status:** Photo documentation only for now. Code (Arduino/ESP32 firmware, web control interface) is being tracked down and will be added in a follow-up commit.
+
+## Overview
+
+The plotter takes X/Y motion commands and reproduces line drawings on paper, with the servo lifting the pen between strokes to avoid drag marks. The system was assembled from a mix of off-the-shelf drivers/motors and custom-designed and 3D-printed structural parts, controlled via an ESP32 and a browser-based control interface.
+
+## Team & Contributions
+
+This was a team build. In the interest of accurate attribution:
+
+- **Mechanical design (my contribution):** SolidWorks part modeling and structural design of the frame/carriage components, prepared for 3D printing.
+- **Web control interface (my contribution):** HTML/CSS front-end for sending plot commands to the system.
+- **Firmware (shared):** Partial contribution to the Arduino motor/homing logic.
+- **Driver & sensor stack (teammate's work):** DRV8833 motor driver integration, TT-motor setup, Hall-sensor and limit-switch homing logic, and OTA firmware update capability were built by a teammate and are credited to them, not reproduced here as my own work.
+
+## Hardware
+
+- ESP32 microcontroller
+- 2x stepper motors (X/Y gantry)
+- 1x servo motor (pen lift/retraction)
+- TT motors with Hall-effect sensors and limit switches for homing (teammate's subsystem)
+- DRV8833 motor driver (teammate's subsystem)
+- Buck converter / power distribution module (pictured below)
+- 3D-printed structural parts (SolidWorks-designed)
+
+## Photos
+
+| | |
+|---|---|
+| ![Full assembly](images/01-full-assembly.jpg) | Full assembled plotter frame with wiring harness |
+| ![Frame overview](images/04-frame-overview.jpg) | Top-down view of the gantry frame during assembly |
+| ![Pen mechanism](images/05-pen-mechanism.jpg) | Close-up of the pen-lift gear/servo mechanism above test paper |
+| ![Power module](images/02-power-module.jpg) | Buck converter / power distribution module used in the build |
+| ![Test sketch](images/03-test-sketch.png) | Character test drawing produced during calibration |
+
+## Roadmap
+
+- [ ] Recover and add ESP32 firmware source
+- [ ] Add HTML/CSS web control interface source
+- [ ] Add wiring diagram
+- [ ] Add short demo video/GIF of the plotter drawing
+
+## Notes
+
+Built as directional exposure to mechatronic system integration — mechanical design, firmware, and a simple web control layer working together on real hardware. Not presented as an industrial-grade product.
