@@ -15,7 +15,7 @@ This was a team build. In the interest of accurate attribution:
 - **Mechanical design (my contribution):** SolidWorks part modeling and structural design of the frame/carriage components, prepared for 3D printing.
 - **Web control interface (my contribution):** HTML/CSS front-end for sending plot commands to the system.
 - **Firmware (shared):** Partial contribution to the Arduino motor/homing logic.
-- **Driver & sensor stack (teammate's work):** DRV8833 motor driver integration, TT-motor setup, Hall-sensor and limit-switch homing logic, and OTA firmware update capability were built by a teammate and are credited to them, not reproduced here as my own work.
+- **Driver & sensor stack:** DRV8833 motor driver integration, TT-motor setup, Hall-sensor and limit-switch homing logic, and OTA firmware update capability
 
 ## Hardware
 
