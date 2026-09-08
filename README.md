@@ -36,6 +36,7 @@ This was a team build. In the interest of accurate attribution:
 | ![Pen mechanism](images/05-pen-mechanism.jpg) | Close-up of the pen-lift gear/servo mechanism above test paper |
 | ![Power module](images/02-power-module.jpg) | Buck converter / power distribution module used in the build |
 | ![Test sketch](images/03-test-sketch.png) | Character test drawing produced during calibration |
+| ![Circuit wiring](images/06-circuit-wiring.jpg) | Breadboard wiring: DRV8833 motor driver, buck converter, and ESP32 |
 
 ## Roadmap
 
