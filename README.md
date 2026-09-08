@@ -2,7 +2,6 @@
 
 A 3-axis mechatronic drawing system built as a **team project**: 2 stepper motors drive the X/Y plotting axes, and a servo motor handles pen lift/retraction. Built and tuned June–July 2025.
 
-> **Status:** Photo documentation only for now. Code (Arduino/ESP32 firmware, web control interface) is being tracked down and will be added in a follow-up commit.
 
 ## Overview
 
@@ -38,13 +37,8 @@ This was a team build. In the interest of accurate attribution:
 | ![Test sketch](images/03-test-sketch.png) | Character test drawing produced during calibration |
 | ![Circuit wiring](images/06-circuit-wiring.jpg) | Breadboard wiring: DRV8833 motor driver, buck converter, and ESP32 |
 
-## Roadmap
 
-- [ ] Recover and add ESP32 firmware source
-- [ ] Add HTML/CSS web control interface source
-- [ ] Add wiring diagram
-- [ ] Add short demo video/GIF of the plotter drawing
 
 ## Notes
 
-Built as directional exposure to mechatronic system integration — mechanical design, firmware, and a simple web control layer working together on real hardware. Not presented as an industrial-grade product.
+Built as directional exposure to mechatronic system integration — mechanical design, firmware, and a simple web control layer working together on real hardware. 
